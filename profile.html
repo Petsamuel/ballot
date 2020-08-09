@@ -1,0 +1,147 @@
+include_once("session.php")
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+			<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+			<link rel="stylesheet" href="bootstrap-grid.css">
+			<link rel="stylesheet" href="bootstrap.min.css">
+			<link rel="stylesheet" type="text/css" href="vote1.css">
+			<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+			<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/solid.css" integrity="sha384-v2Tw72dyUXeU3y4aM2Y0tBJQkGfplr39mxZqlTBDUZAb9BGoC40+rdFCG0m10lXk" crossorigin="anonymous">
+			<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/fontawesome.css" integrity="sha384-q3jl8XQu1OpdLgGFvNRnPdj5VIlCvgsDQTQB6owSOHWlAurxul7f+JpUOVdAiJ5P" crossorigin="anonymous">
+			<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+			<script type="text/javascript" src="styles/js/bootstrap.min.js"></script>
+<title>Profile</title>
+</head>
+	<body style="background-image: url(bg1.jpg);background-size: cover;background-attachment: fixed;">
+		<div class="overlay">
+			<nav class="navbar navbar-expand-lg navbar-dark bg-default static-top ">
+				<a class="navbar-brand" href="index.html">
+					<img src="logo.png" class="d-inline-block align-top" width="50" height="50" alt="..."> 
+					<h3 style="font-family: Courier; text-shadow: 0px 0px 3px black;font-size: large;"> Yaba Collage Of Technology</h3>
+				</a>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+			
+				<div class="collapse navbar-collapse " id="navbarContent">
+					<ul class="navbar-nav mr-auto">
+						<li class="nav-item active">
+							<a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+						</li>
+			
+						<li class="nav-item">
+							<a class="nav-link" href="#">About</a>
+						</li>
+						
+						<li class="nav-item">
+							<a class="nav-link " href="#" >Ballot</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link " href="#" >Events</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link " href="#" >inside school</a>
+						</li>
+					</ul>
+			
+					<span class="navbar-text">
+						<h2 id="header">Balloting Platform</h2>
+					</span>
+				
+				</div>
+			</nav>
+			<ul class="nav bg-warning nav-fixed">
+			<li class="nav-item">
+			<img src="profile.png" alt="" style="width:60px; border-radius: 3rem; margin: 0px 23px;">
+			</li>
+			<li class="nav-item">
+			<a class="nav-link" href="#" style="margin: 0px 4px;">Results</a>
+			</li>
+			<li class="nav-item dropdown">
+				<a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">profile settings</a>
+				<div class="dropdown-menu" aria-labelledby="dropdownId">
+					<a class="dropdown-item" href="#">Profile</a>
+					<a class="dropdown-item" href="#">complain</a>
+				</div>
+			</li>
+			</ul>
+<div class="container-fluid">
+	
+	<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+		<div class="row">
+			
+			<div class="col-xs-6 col-sm-6 col-md-6 col-lg-3" style="margin-top: 15px;">
+				<ul class="list-group text-dark">
+					<!--tips: add .list-group-flush to the .list-group to remove some borders and rounded corners-->
+					<li class="list-group-item active">Vote camp</li>
+					<li class="list-group-item">School Premises</li>
+					<li class="list-group-item d-flex justify-content-between align-items-center">
+						Event
+						<span class="badge badge-primary badge-pill">99</span>
+					</li>
+					<li class="list-group-item disabled">Disabled</li>
+					<li class="list-group-item active">Class Activities</li>
+					<li class="list-group-item">Event</li>
+					<li class="list-group-item d-flex justify-content-between align-items-center">
+						advisory
+						<span class="badge badge-primary badge-pill">99</span>
+					</li>
+					<li class="list-group-item disabled">Disabled</li>
+					<li class="list-group-item active">Ballot</li>
+					<li class="list-group-item">Buildings</li>
+					<li class="list-group-item d-flex justify-content-between align-items-center">
+						Bad spaces
+						<span class="badge badge-primary badge-pill">99</span>
+					</li>
+					<li class="list-group-item disabled">available</li>
+				</ul>
+			</div>
+			
+			<div class="col-xs-9 col-sm-9 col-md-9 col-lg-9" style="margin-top: 15px;">
+			<ul class="list-group text-dark">
+				<!--tips: add .list-group-flush to the .list-group to remove some borders and rounded corners-->
+				<li class="list-group-item active text-center ">Activities</li>
+				<li class="list-group-item">Face of Yct</li>
+				<li class="list-group-item d-flex justify-content-between align-items-center">
+					<img src="girll.png" alt="" style="width: 10%;">
+					<a href="" class="btn btn-primary">vote</a>
+					<img src="boy.png" alt="" style="width: 10%;">
+					<a href="" class="btn btn-primary">vote</a>
+					<img src="man.png" alt="" style="width: 10%;">
+					<a href="" class="btn btn-primary">vote</a>
+					<span class="badge badge-primary badge-pill">3</span>
+				</li>
+			</ul>
+			<ul class="list-group text-dark">
+				<!--tips: add .list-group-flush to the .list-group to remove some borders and rounded corners-->
+				<li class="list-group-item active text-center ">Ballot</li>
+				<li class="list-group-item"><img src="yct2.png" alt="" style="width: 15%;"> <a href="#">hostel 1</a></li>
+				<li class="list-group-item d-flex justify-content-between align-items-center">
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit porro nesciunt, dicta tempore nobis voluptatem,
+					 alias hic corrupti eos id quos numquam qui consequuntur 
+					 atque quo voluptate vel aliquid cumque?
+					<span class="badge badge-primary badge-pill">0</span>
+				</li>
+				<li class="list-group-item disabled">not available</li>
+			</ul>
+			
+
+			
+			</div>
+
+		</div>
+	</div>
+	
+</div>
+
+<!-- end -->
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</body>
+</html>
